@@ -8,10 +8,13 @@ class Main extends Component {
   state = {
     friends,
     score: 0,
-    highscore: 0
+    highscore: 0,
+    lose: false,
+    win: false
   };
 
   gameOver = () => {
+    this.setState({ lose: true });
     if (this.state.score > this.state.highscore) {
       this.setState({ highscore: this.state.score }, function() {
         console.log(this.state.highscore);
@@ -20,17 +23,20 @@ class Main extends Component {
     this.state.friends.forEach(friends => {
       friends.count = 0;
     });
-    alert(`Game Over :( \nscore: ${this.state.score}`);
+    // alert(`Game Over :( \nscore: ${this.state.score}`);
+
     this.setState({ score: 0 });
     return true;
   };
 
   clickCount = id => {
+    this.setState({ lose: false, win: false });
     this.state.friends.find((item, index) => {
       if (item.id === id) {
         if (!friends[index].count) {
           friends[index].count = 1;
           this.setState({ score: this.state.score + 1 });
+          this.setState({ win: true });
           this.state.friends.sort(() => Math.random() - 0.5);
           return true;
         } else {
@@ -44,7 +50,12 @@ class Main extends Component {
   render() {
     return (
       <div>
-        <Navbar score={this.state.score} highscore={this.state.highscore} />
+        <Navbar
+          score={this.state.score}
+          highscore={this.state.highscore}
+          win={this.state.win}
+          lose={this.state.lose}
+        />
         <div className="waterFilter" tabIndex="-1"></div>
         <Container style={{ marginTop: 30 }}>
           {this.state.friends.map(friend => (

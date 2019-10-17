@@ -9,7 +9,7 @@ function ClickItem(props) {
       className="click-item"
       style={{
         backgroundImage: props.image ? `url(${props.image})` : "none",
-        top: Math.floor(Math.random() * 60) + 10 + "vh",
+        top: Math.floor(Math.random() * 60) + 20 + "vh",
         animationDuration: Math.random() * 30 + 8 + "s",
         height: props.height,
         width: props.width,

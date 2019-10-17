@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -30,7 +30,7 @@ div[data-reactroot] {
   -webkit-animation: 0.4s correct;
   animation: 0.4s correct;
 }
-.navbar .incorrect {
+.incorrect {
   -webkit-animation: 0.4s incorrect;
   animation: 0.4s incorrect;
 }
@@ -58,28 +58,27 @@ div[data-reactroot] {
 }
 @-webkit-keyframes incorrect {
   0% {
-    color: #fff;
+    background-color: none;
   }
   50% {
-    color: #c62828;
+    background-color: #df32326b;
   }
   to {
-    color: #fff;
+    background-color: none;
   }
 }
 @keyframes incorrect {
   0% {
-    color: #fff;
+    background-color: none;
   }
   50% {
-    color: #c62828;
+    background-color: #df32326b;
   }
   to {
-    color: #fff;
+    background-color: none;
   }
 }
 .navbar {
-  background: #5133a400;
   min-height: 70px;
   position: fixed;
   width: 100%;
@@ -261,7 +260,7 @@ div[data-reactroot] {
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 #root,
 #root > div,
@@ -278,8 +277,8 @@ html {
   background-blend-mode: screen;
   z-index: 2000;
   height: 100vh;
-  margin-left: -20vw;
-  width: 140vw;
+  margin-left: -40vw;
+  width: 200vw;
   position: relative;
   display: block;
   pointer-events: none;
@@ -294,4 +293,9 @@ html {
   100% {
     transform: skewX(30deg);
   }
+}
+
+.subheader {
+  font-size: 0.8em;
+  margin-top: 0.8em;
 }
