@@ -26,7 +26,7 @@ div[data-reactroot] {
   margin: 0;
 }
 
-.navbar .correct {
+.correct {
   -webkit-animation: 0.4s correct;
   animation: 0.4s correct;
 }
@@ -36,24 +36,24 @@ div[data-reactroot] {
 }
 @-webkit-keyframes correct {
   0% {
-    color: #fff;
+    background-color: none;
   }
   50% {
-    color: #2e7d32;
+    background-color: #32df5d6b;
   }
   to {
-    color: #fff;
+    background-color: none;
   }
 }
 @keyframes correct {
   0% {
-    color: #fff;
+    background-color: none;
   }
   50% {
-    color: #2e7d32;
+    background-color: #32df5d6b;
   }
   to {
-    color: #fff;
+    background-color: none;
   }
 }
 @-webkit-keyframes incorrect {

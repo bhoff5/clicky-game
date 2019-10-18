@@ -7,9 +7,8 @@ function Navbar(props) {
   return (
     <nav
       className={
-        props.lose === true
-          ? "incorrect navbar navbar-expand-lg"
-          : "navbar navbar-expand-lg"
+        (props.lose === true ? "incorrect navbar" : "navbar") +
+        (props.win === true ? " correct" : " navbar")
       }
     >
       <ul>
@@ -18,7 +17,7 @@ function Navbar(props) {
           <Link className="navbar-brand" to="/">
             Freshwater Fish Game
           </Link>
-          <div className="subheader">Click each fish only once to win!</div>
+          <div className="subheader">Click each fish one time to win!</div>
         </li>
         <li>Current Score: {props.score}</li>
         <li>High Score: {props.highscore}</li>
