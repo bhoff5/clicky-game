@@ -3,6 +3,7 @@ import Container from "../components/Container";
 import friends from "../friends.json";
 import ClickItem from "../components/ClickItem";
 import Navbar from "../components/Navbar";
+import Wrapper from "../components/Wrapper";
 
 class Main extends Component {
   state = {
@@ -56,19 +57,30 @@ class Main extends Component {
           win={this.state.win}
           lose={this.state.lose}
         />
-        <div className="waterFilter" tabIndex="-1"></div>
-        <Container style={{ marginTop: 30 }}>
-          {this.state.friends.map(friend => (
-            <ClickItem
-              key={friend.name}
-              id={friend.id}
-              image={friend.image}
-              clickCount={this.clickCount}
-              height={friend.height}
-              width={friend.width}
-            />
-          ))}
-        </Container>
+
+        <Wrapper
+          style={{
+            backgroundImage: 'url("./images/underwater-bottom-wallpaper.jpg")'
+          }}
+        >
+          <div
+            className="waterFilter"
+            tabIndex="-1"
+            style={{ backgroundImage: 'url("./images/waterBackground.jpg")' }}
+          ></div>
+          <Container style={{ marginTop: 30 }}>
+            {this.state.friends.map(friend => (
+              <ClickItem
+                key={friend.name}
+                id={friend.id}
+                image={friend.image}
+                clickCount={this.clickCount}
+                height={friend.height}
+                width={friend.width}
+              />
+            ))}
+          </Container>
+        </Wrapper>
       </div>
     );
   }

@@ -2,63 +2,63 @@
   {
     "id": 1,
     "name": "Alligator Gar",
-    "image": "/media/images/Alligator_gar.png",
+    "image": "./images/Alligator_gar.png",
     "height": "150px",
     "width": "550px"
   },
   {
     "id": 2,
     "name": "American Shad",
-    "image": "/media/images/American_shad.png",
+    "image": "./images/American_shad.png",
     "height": "100px",
     "width": "200px"
   },
   {
     "id": 3,
     "name": "Black_crappie",
-    "image": "/media/images/Black_crappie.png",
+    "image": "./images/Black_crappie.png",
     "height": "50px",
     "width": "100px"
   },
   {
     "id": 4,
     "name": "Lake Sturgeon",
-    "image": "/media/images/Lake_sturgeon.png",
+    "image": "./images/Lake_sturgeon.png",
     "height": "150px",
     "width": "550px"
   },
   {
     "id": 5,
     "name": "Muskellunge",
-    "image": "/media/images/Muskellunge.png",
+    "image": "./images/Muskellunge.png",
     "height": "100px",
     "width": "300px"
   },
   {
     "id": 6,
     "name": "Northern Pike",
-    "image": "/media/images/Northern_pike.png",
+    "image": "./images/Northern_pike.png",
     "height": "100px",
     "width": "300px"
   },
   {
     "id": 7,
     "name": "Smallmouth_bass",
-    "image": "/media/images/Smallmouth_bass.png",
+    "image": "./images/Smallmouth_bass.png",
     "height": "75px",
     "width": "140px"
   },
   {
     "id": 8,
     "name": "Walleye",
-    "image": "/media/images/Walleye.png",
+    "image": "./images/Walleye.png",
     "height": "100px",
     "width": "200px"
   },
   {
     "id": 9,
     "name": "Yellow_perch",
-    "image": "/media/images/Yellow_perch.png",
+    "image": "./images/Yellow_perch.png",
     "height": "75px",
     "width": "140px"
   }
