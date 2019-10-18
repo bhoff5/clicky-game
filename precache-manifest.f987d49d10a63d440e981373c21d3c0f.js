@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "306e19ccec93b94ccd89f7c7b3fc2b3c",
+    "revision": "7e29c52242ff8e800e74801d4b4d53c2",
     "url": "/clicky-game/index.html"
   },
   {
