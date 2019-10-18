@@ -5,12 +5,7 @@ import "./style.css";
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navbar(props) {
   return (
-    <nav
-      className={
-        (props.lose === true ? "incorrect navbar" : "navbar") +
-        (props.win === true ? " correct" : " navbar")
-      }
-    >
+    <nav className={props.lose === true ? "incorrect navbar" : "navbar"}>
       <ul>
         <li>
           {" "}
