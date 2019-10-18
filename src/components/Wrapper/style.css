@@ -8,7 +8,8 @@
 
 .wrapper::after {
   content: "";
-  background: url("/media/images/underwater-bottom-wallpaper.jpg");
+  /* background: url("/media/images/underwater-bottom-wallpaper.jpg"); */
+  background-color: blue;
   background-size: cover;
   background-repeat: no-repeat;
   /* opacity: 0.7; */
